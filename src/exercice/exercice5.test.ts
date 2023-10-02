@@ -63,7 +63,7 @@ describe("AddressBook", () => {
     };
     addressBook.addContact(contact);
     addressBook.removeContactById("1");
-    expect(addressBook.searchContact("Alice")).toEqual([]);
+    expect(addressBook.searchContact("Alice")).toEqual(null);
   });
 
   it("should search contacts", () => {
